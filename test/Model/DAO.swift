@@ -43,12 +43,12 @@ class DAO{
         let fitness = Stand.init(standNaam: "Fitness", afbeeldingStandNaam: "yoga1.jpg")
         let surf = Stand.init(standNaam: "Surf & Turf", afbeeldingStandNaam: "surf4.jpg")
         let dans = Stand.init(standNaam: "Dans voor jong en oud", afbeeldingStandNaam: "dans.jpg")
-        let burger = Stand.init(standNaam: "Voor de regionale burger", afbeeldingStandNaam: "burger.jpg")
+        let burger = Stand.init(standNaam: "Voor de regionale BURGER", afbeeldingStandNaam: "burger.jpg")
         let loempia = Stand.init(standNaam: "Oempa Loempia", afbeeldingStandNaam: "loempia.jpg")
         let frituur = Stand.init(standNaam: "De Puntzak", afbeeldingStandNaam: "friet.jpg")
         let bar = Stand.init(standNaam: "Bar Bier", afbeeldingStandNaam: "bar.jpg")
         let cocktail = Stand.init(standNaam: "Cocktail Bar", afbeeldingStandNaam: "cocktail.jpg")
-        let champagn = Stand.init(standNaam: "Voor de big spenders onder ons", afbeeldingStandNaam: "champagnbar.jpg")
+        let champagn = Stand.init(standNaam: "BIG SPENDERS", afbeeldingStandNaam: "champagnbar.jpg")
         let market = Stand.init(standNaam: "Sea Market", afbeeldingStandNaam: "market.jpg")
         
         //standen toevoegen aan juiste standsoort

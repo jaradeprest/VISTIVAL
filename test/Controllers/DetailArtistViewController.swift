@@ -10,8 +10,6 @@ import UIKit
 
 class DetailArtistViewController: UIViewController {
 
-    
-    
     @IBOutlet weak var lblArtistName: UILabel!
     @IBOutlet weak var tvBand: UITextView!
     @IBOutlet weak var imageBand: UIImageView!

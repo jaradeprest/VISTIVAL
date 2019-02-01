@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		51183D1B2204991D0025BD76 /* Icon-Music-20x20@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 51183D1A2204991D0025BD76 /* Icon-Music-20x20@2x.png */; };
+		51183D1D220499CE0025BD76 /* Icon-Home-20x20@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 51183D1C220499CE0025BD76 /* Icon-Home-20x20@2x.png */; };
+		51183D1F22049A2D0025BD76 /* Icon-Stand-20x20@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 51183D1E22049A2C0025BD76 /* Icon-Stand-20x20@2x.png */; };
+		51183D2122049A910025BD76 /* Icon-Like-20x20@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 51183D2022049A900025BD76 /* Icon-Like-20x20@2x.png */; };
+		51183D2322049ACE0025BD76 /* Icon-Map-20x20@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 51183D2222049ACD0025BD76 /* Icon-Map-20x20@2x.png */; };
 		5154E65B2202F5220079251B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5154E65A2202F5220079251B /* AppDelegate.swift */; };
 		5154E65D2202F5220079251B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5154E65C2202F5220079251B /* ViewController.swift */; };
 		5154E6602202F5220079251B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5154E65E2202F5220079251B /* Main.storyboard */; };
@@ -69,9 +74,20 @@
 		51A5D90A22043A5B009CA881 /* cocktail.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 51A5D90922043A5B009CA881 /* cocktail.jpg */; };
 		51A5D90C22043A96009CA881 /* champagnbar.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 51A5D90B22043A96009CA881 /* champagnbar.jpg */; };
 		51A5D90E22044FD6009CA881 /* StandsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51A5D90D22044FD6009CA881 /* StandsViewController.swift */; };
+		51A5D91022045CFA009CA881 /* liked.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51A5D90F22045CFA009CA881 /* liked.swift */; };
+		51A5D91222045E6C009CA881 /* LikedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51A5D91122045E6C009CA881 /* LikedViewController.swift */; };
+		51A5D91422045E8D009CA881 /* LikedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51A5D91322045E8D009CA881 /* LikedTableViewCell.swift */; };
+		51A5D918220464BE009CA881 /* MyTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51A5D917220464BE009CA881 /* MyTabBarController.swift */; };
+		51A5D91A220477B4009CA881 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51A5D919220477B4009CA881 /* MapViewController.swift */; };
+		51A5D91C22047946009CA881 /* myPin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51A5D91B22047946009CA881 /* myPin.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		51183D1A2204991D0025BD76 /* Icon-Music-20x20@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Music-20x20@2x.png"; sourceTree = "<group>"; };
+		51183D1C220499CE0025BD76 /* Icon-Home-20x20@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Home-20x20@2x.png"; sourceTree = "<group>"; };
+		51183D1E22049A2C0025BD76 /* Icon-Stand-20x20@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Stand-20x20@2x.png"; sourceTree = "<group>"; };
+		51183D2022049A900025BD76 /* Icon-Like-20x20@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Like-20x20@2x.png"; sourceTree = "<group>"; };
+		51183D2222049ACD0025BD76 /* Icon-Map-20x20@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Map-20x20@2x.png"; sourceTree = "<group>"; };
 		5154E6572202F5220079251B /* test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5154E65A2202F5220079251B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5154E65C2202F5220079251B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -136,6 +152,12 @@
 		51A5D90922043A5B009CA881 /* cocktail.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = cocktail.jpg; path = "images eindproject/cocktail.jpg"; sourceTree = SOURCE_ROOT; };
 		51A5D90B22043A96009CA881 /* champagnbar.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = champagnbar.jpg; path = "images eindproject/champagnbar.jpg"; sourceTree = SOURCE_ROOT; };
 		51A5D90D22044FD6009CA881 /* StandsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandsViewController.swift; sourceTree = "<group>"; };
+		51A5D90F22045CFA009CA881 /* liked.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = liked.swift; sourceTree = "<group>"; };
+		51A5D91122045E6C009CA881 /* LikedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikedViewController.swift; sourceTree = "<group>"; };
+		51A5D91322045E8D009CA881 /* LikedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikedTableViewCell.swift; sourceTree = "<group>"; };
+		51A5D917220464BE009CA881 /* MyTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTabBarController.swift; sourceTree = "<group>"; };
+		51A5D919220477B4009CA881 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		51A5D91B22047946009CA881 /* myPin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myPin.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -189,6 +211,10 @@
 				5154E6B92203440E0079251B /* DetailArtistViewController.swift */,
 				5154E6BB2203441C0079251B /* DetailStandViewController.swift */,
 				51A5D90D22044FD6009CA881 /* StandsViewController.swift */,
+				51A5D91122045E6C009CA881 /* LikedViewController.swift */,
+				51A5D91322045E8D009CA881 /* LikedTableViewCell.swift */,
+				51A5D917220464BE009CA881 /* MyTabBarController.swift */,
+				51A5D919220477B4009CA881 /* MapViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -201,6 +227,8 @@
 				5154E6B1220343C10079251B /* Stand.swift */,
 				5154E6B3220343CE0079251B /* DAO.swift */,
 				5154E6BE2203452E0079251B /* Standsoort.swift */,
+				51A5D90F22045CFA009CA881 /* liked.swift */,
+				51A5D91B22047946009CA881 /* myPin.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -208,6 +236,11 @@
 		5154E66E22033A9F0079251B /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				51183D2222049ACD0025BD76 /* Icon-Map-20x20@2x.png */,
+				51183D2022049A900025BD76 /* Icon-Like-20x20@2x.png */,
+				51183D1E22049A2C0025BD76 /* Icon-Stand-20x20@2x.png */,
+				51183D1C220499CE0025BD76 /* Icon-Home-20x20@2x.png */,
+				51183D1A2204991D0025BD76 /* Icon-Music-20x20@2x.png */,
 				51A5D90322043985009CA881 /* loempia.jpg */,
 				51A5D90122043889009CA881 /* burger.jpg */,
 				5154E67222033C220079251B /* dans.jpg */,
@@ -320,6 +353,7 @@
 				5154E6AC220341910079251B /* vis-04.png in Resources */,
 				5154E6652202F5300079251B /* LaunchScreen.storyboard in Resources */,
 				5154E6C722034ABB0079251B /* preute.jpg in Resources */,
+				51183D2122049A910025BD76 /* Icon-Like-20x20@2x.png in Resources */,
 				5154E68B22033C230079251B /* sfeer7.jpg in Resources */,
 				5154E6A522033C230079251B /* workout2.jpg in Resources */,
 				5154E69F22033C230079251B /* sfeer4.jpg in Resources */,
@@ -336,10 +370,13 @@
 				51A5D90422043985009CA881 /* loempia.jpg in Resources */,
 				5154E69222033C230079251B /* family.jpg in Resources */,
 				51A5D90222043889009CA881 /* burger.jpg in Resources */,
+				51183D1D220499CE0025BD76 /* Icon-Home-20x20@2x.png in Resources */,
 				5154E69422033C230079251B /* surf13.jpg in Resources */,
 				5154E68F22033C230079251B /* lounge.jpg in Resources */,
 				5154E68E22033C230079251B /* dans.jpg in Resources */,
+				51183D2322049ACE0025BD76 /* Icon-Map-20x20@2x.png in Resources */,
 				5154E69622033C230079251B /* sfeer1.jpg in Resources */,
+				51183D1B2204991D0025BD76 /* Icon-Music-20x20@2x.png in Resources */,
 				5154E69A22033C230079251B /* yoga1.jpg in Resources */,
 				5154E6A622033C230079251B /* hoelahoep.jpg in Resources */,
 				5154E6C1220349E10079251B /* 2fabiola.jpg in Resources */,
@@ -365,6 +402,7 @@
 				5154E6C922034B050079251B /* kenji.jpg in Resources */,
 				5154E69822033C230079251B /* sfeer8.jpg in Resources */,
 				5154E6D722034CA90079251B /* tlp.jpg in Resources */,
+				51183D1F22049A2D0025BD76 /* Icon-Stand-20x20@2x.png in Resources */,
 				51A5D90C22043A96009CA881 /* champagnbar.jpg in Resources */,
 				5154E6A022033C230079251B /* workout.jpg in Resources */,
 			);
@@ -377,18 +415,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51A5D91222045E6C009CA881 /* LikedViewController.swift in Sources */,
 				5154E6BF2203452E0079251B /* Standsoort.swift in Sources */,
 				5154E6B8220343F60079251B /* StandTableViewCell.swift in Sources */,
+				51A5D91022045CFA009CA881 /* liked.swift in Sources */,
 				5154E6B4220343CE0079251B /* DAO.swift in Sources */,
 				5154E6AE220343540079251B /* Artist.swift in Sources */,
+				51A5D91422045E8D009CA881 /* LikedTableViewCell.swift in Sources */,
 				5154E6BA2203440E0079251B /* DetailArtistViewController.swift in Sources */,
 				5154E6BC2203441C0079251B /* DetailStandViewController.swift in Sources */,
+				51A5D918220464BE009CA881 /* MyTabBarController.swift in Sources */,
 				5154E65D2202F5220079251B /* ViewController.swift in Sources */,
 				5154E6B2220343C10079251B /* Stand.swift in Sources */,
 				5154E6B0220343600079251B /* Playtime.swift in Sources */,
 				51A5D90E22044FD6009CA881 /* StandsViewController.swift in Sources */,
 				5154E65B2202F5220079251B /* AppDelegate.swift in Sources */,
 				5154E6B6220343E90079251B /* ArtistTableViewCell.swift in Sources */,
+				51A5D91A220477B4009CA881 /* MapViewController.swift in Sources */,
+				51A5D91C22047946009CA881 /* myPin.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
