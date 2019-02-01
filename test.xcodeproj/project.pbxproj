@@ -62,6 +62,12 @@
 		5154E6D322034C4C0079251B /* fete.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5154E6D222034C4C0079251B /* fete.jpg */; };
 		5154E6D522034C820079251B /* goose.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5154E6D422034C820079251B /* goose.jpg */; };
 		5154E6D722034CA90079251B /* tlp.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5154E6D622034CA90079251B /* tlp.jpg */; };
+		51A5D90222043889009CA881 /* burger.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 51A5D90122043889009CA881 /* burger.jpg */; };
+		51A5D90422043985009CA881 /* loempia.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 51A5D90322043985009CA881 /* loempia.jpg */; };
+		51A5D906220439E3009CA881 /* friet.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 51A5D905220439E3009CA881 /* friet.jpg */; };
+		51A5D90822043A28009CA881 /* bar.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 51A5D90722043A28009CA881 /* bar.jpg */; };
+		51A5D90A22043A5B009CA881 /* cocktail.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 51A5D90922043A5B009CA881 /* cocktail.jpg */; };
+		51A5D90C22043A96009CA881 /* champagnbar.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 51A5D90B22043A96009CA881 /* champagnbar.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -122,6 +128,12 @@
 		5154E6D222034C4C0079251B /* fete.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = fete.jpg; path = "images eindproject/fete.jpg"; sourceTree = SOURCE_ROOT; };
 		5154E6D422034C820079251B /* goose.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = goose.jpg; path = "images eindproject/goose.jpg"; sourceTree = SOURCE_ROOT; };
 		5154E6D622034CA90079251B /* tlp.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = tlp.jpg; path = "images eindproject/tlp.jpg"; sourceTree = SOURCE_ROOT; };
+		51A5D90122043889009CA881 /* burger.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = burger.jpg; path = "images eindproject/burger.jpg"; sourceTree = SOURCE_ROOT; };
+		51A5D90322043985009CA881 /* loempia.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = loempia.jpg; path = "images eindproject/loempia.jpg"; sourceTree = SOURCE_ROOT; };
+		51A5D905220439E3009CA881 /* friet.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = friet.jpg; path = "images eindproject/friet.jpg"; sourceTree = SOURCE_ROOT; };
+		51A5D90722043A28009CA881 /* bar.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = bar.jpg; path = "images eindproject/bar.jpg"; sourceTree = SOURCE_ROOT; };
+		51A5D90922043A5B009CA881 /* cocktail.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = cocktail.jpg; path = "images eindproject/cocktail.jpg"; sourceTree = SOURCE_ROOT; };
+		51A5D90B22043A96009CA881 /* champagnbar.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = champagnbar.jpg; path = "images eindproject/champagnbar.jpg"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -193,6 +205,8 @@
 		5154E66E22033A9F0079251B /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				51A5D90322043985009CA881 /* loempia.jpg */,
+				51A5D90122043889009CA881 /* burger.jpg */,
 				5154E67222033C220079251B /* dans.jpg */,
 				5154E67622033C220079251B /* family.jpg */,
 				5154E68A22033C230079251B /* hoelahoep.jpg */,
@@ -211,19 +225,23 @@
 				5154E68222033C230079251B /* surf1.jpg */,
 				5154E67D22033C220079251B /* surf2.jpg */,
 				5154E67722033C220079251B /* surf3.jpg */,
+				51A5D90722043A28009CA881 /* bar.jpg */,
 				5154E67B22033C220079251B /* surf4.jpg */,
 				5154E67822033C220079251B /* surf13.jpg */,
 				5154E68822033C230079251B /* vuurwerk.jpg */,
 				5154E68622033C230079251B /* waterpijp.jpg */,
+				51A5D90922043A5B009CA881 /* cocktail.jpg */,
 				5154E68422033C230079251B /* workout.jpg */,
 				5154E68922033C230079251B /* workout2.jpg */,
 				5154E67E22033C220079251B /* yoga1.jpg */,
 				5154E68522033C230079251B /* yoga2.jpg */,
 				5154E67022033C220079251B /* yoga3.jpg */,
+				51A5D90B22043A96009CA881 /* champagnbar.jpg */,
 				5154E68022033C220079251B /* yoga4.jpg */,
 				5154E6AB220341910079251B /* vis-04.png */,
 				5154E6C0220349E10079251B /* 2fabiola.jpg */,
 				5154E6C222034A180079251B /* admiral.jpg */,
+				51A5D905220439E3009CA881 /* friet.jpg */,
 				5154E6C422034A790079251B /* hof.jpg */,
 				5154E6C622034ABB0079251B /* preute.jpg */,
 				5154E6C822034B050079251B /* kenji.jpg */,
@@ -307,11 +325,14 @@
 				5154E6C522034A790079251B /* hof.jpg in Resources */,
 				5154E69C22033C230079251B /* yoga4.jpg in Resources */,
 				5154E6A322033C230079251B /* sfeer3.jpg in Resources */,
+				51A5D90A22043A5B009CA881 /* cocktail.jpg in Resources */,
 				5154E69522033C230079251B /* sfeer5.jpg in Resources */,
 				5154E6A422033C230079251B /* vuurwerk.jpg in Resources */,
 				5154E6C322034A180079251B /* admiral.jpg in Resources */,
 				5154E6CB22034B4E0079251B /* blunt.jpg in Resources */,
+				51A5D90422043985009CA881 /* loempia.jpg in Resources */,
 				5154E69222033C230079251B /* family.jpg in Resources */,
+				51A5D90222043889009CA881 /* burger.jpg in Resources */,
 				5154E69422033C230079251B /* surf13.jpg in Resources */,
 				5154E68F22033C230079251B /* lounge.jpg in Resources */,
 				5154E68E22033C230079251B /* dans.jpg in Resources */,
@@ -321,8 +342,10 @@
 				5154E6C1220349E10079251B /* 2fabiola.jpg in Resources */,
 				5154E69022033C230079251B /* market.jpg in Resources */,
 				5154E69B22033C230079251B /* mask.jpg in Resources */,
+				51A5D90822043A28009CA881 /* bar.jpg in Resources */,
 				5154E6A122033C230079251B /* yoga2.jpg in Resources */,
 				5154E6D322034C4C0079251B /* fete.jpg in Resources */,
+				51A5D906220439E3009CA881 /* friet.jpg in Resources */,
 				5154E69922033C230079251B /* surf2.jpg in Resources */,
 				5154E69322033C230079251B /* surf3.jpg in Resources */,
 				5154E68C22033C230079251B /* yoga3.jpg in Resources */,
@@ -339,6 +362,7 @@
 				5154E6C922034B050079251B /* kenji.jpg in Resources */,
 				5154E69822033C230079251B /* sfeer8.jpg in Resources */,
 				5154E6D722034CA90079251B /* tlp.jpg in Resources */,
+				51A5D90C22043A96009CA881 /* champagnbar.jpg in Resources */,
 				5154E6A022033C230079251B /* workout.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

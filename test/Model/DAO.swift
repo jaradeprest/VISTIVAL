@@ -39,11 +39,29 @@ class DAO{
         
         
         //STANDEN
+        let yoga = Stand.init(standNaam: "Yoga by hotmaster", afbeeldingStandNaam: "yoga3.jpg")
+        let fitness = Stand.init(standNaam: "Fitness", afbeeldingStandNaam: "yoga1.jpg")
+        let surf = Stand.init(standNaam: "Surf & Turf", afbeeldingStandNaam: "surf4.jpg")
+        let dans = Stand.init(standNaam: "Dans voor jong en oud", afbeeldingStandNaam: "dans.jpg")
+        let burger = Stand.init(standNaam: "Voor de regionale burger", afbeeldingStandNaam: "burger.jpg")
+        let loempia = Stand.init(standNaam: "Oempa Loempia", afbeeldingStandNaam: "loempia.jpg")
+        let frituur = Stand.init(standNaam: "De Puntzak", afbeeldingStandNaam: "friet.jpg")
+        let bar = Stand.init(standNaam: "Bar Bier", afbeeldingStandNaam: "bar.jpg")
+        let cocktail = Stand.init(standNaam: "Cocktail Bar", afbeeldingStandNaam: "cocktail.jpg")
+        let champagn = Stand.init(standNaam: "Voor de big spenders onder ons", afbeeldingStandNaam: "champagnbar.jpg")
+        let market = Stand.init(standNaam: "Sea Market", afbeeldingStandNaam: "market.jpg")
         
         //standen toevoegen aan juiste standsoort
-        //let food = Standsoort.init(...)
-        //food.standLijst = Standsoort.init(...)
+        let drinks = Standsoort.init(naam: "Drinks")
+        drinks.standLijst += [bar, cocktail, champagn]
+        let food = Standsoort.init(naam: "Food")
+        food.standLijst += [burger, loempia, frituur]
+        let sport = Standsoort.init(naam: "Sport")
+        sport.standLijst += [yoga, fitness, surf, dans]
+        let shop = Standsoort.init(naam: "Shop")
+        shop.standLijst += [market]
+        
         //standsoorten toevoegen aan lijst van soort
-        //self.standSoortLijst = [food, ...]
+        self.standSoortLijst = [food, drinks, sport, shop]
     }
 }
