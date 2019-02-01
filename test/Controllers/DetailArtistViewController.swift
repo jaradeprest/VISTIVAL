@@ -10,21 +10,20 @@ import UIKit
 
 class DetailArtistViewController: UIViewController {
 
+    
+    
+    @IBOutlet weak var lblArtistName: UILabel!
+    @IBOutlet weak var tvBand: UITextView!
+    @IBOutlet weak var imageBand: UIImageView!
+    var clickedArtist:Artist?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        lblArtistName.text = clickedArtist!.bandNaam
+        tvBand.text = "Deze band bestaat uit: \(clickedArtist!.bandLeden!)"
+        imageBand.image = UIImage.init(named: clickedArtist!.afbeeldingsNaam!)
+        
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
