@@ -10,6 +10,10 @@ import UIKit
 
 class StandTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var lblStandName: UILabel!
+    @IBOutlet weak var imageStand: UIImageView!
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

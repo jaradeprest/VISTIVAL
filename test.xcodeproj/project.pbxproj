@@ -68,6 +68,7 @@
 		51A5D90822043A28009CA881 /* bar.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 51A5D90722043A28009CA881 /* bar.jpg */; };
 		51A5D90A22043A5B009CA881 /* cocktail.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 51A5D90922043A5B009CA881 /* cocktail.jpg */; };
 		51A5D90C22043A96009CA881 /* champagnbar.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 51A5D90B22043A96009CA881 /* champagnbar.jpg */; };
+		51A5D90E22044FD6009CA881 /* StandsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51A5D90D22044FD6009CA881 /* StandsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -134,6 +135,7 @@
 		51A5D90722043A28009CA881 /* bar.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = bar.jpg; path = "images eindproject/bar.jpg"; sourceTree = SOURCE_ROOT; };
 		51A5D90922043A5B009CA881 /* cocktail.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = cocktail.jpg; path = "images eindproject/cocktail.jpg"; sourceTree = SOURCE_ROOT; };
 		51A5D90B22043A96009CA881 /* champagnbar.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = champagnbar.jpg; path = "images eindproject/champagnbar.jpg"; sourceTree = SOURCE_ROOT; };
+		51A5D90D22044FD6009CA881 /* StandsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -186,6 +188,7 @@
 				5154E6B7220343F60079251B /* StandTableViewCell.swift */,
 				5154E6B92203440E0079251B /* DetailArtistViewController.swift */,
 				5154E6BB2203441C0079251B /* DetailStandViewController.swift */,
+				51A5D90D22044FD6009CA881 /* StandsViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -383,6 +386,7 @@
 				5154E65D2202F5220079251B /* ViewController.swift in Sources */,
 				5154E6B2220343C10079251B /* Stand.swift in Sources */,
 				5154E6B0220343600079251B /* Playtime.swift in Sources */,
+				51A5D90E22044FD6009CA881 /* StandsViewController.swift in Sources */,
 				5154E65B2202F5220079251B /* AppDelegate.swift in Sources */,
 				5154E6B6220343E90079251B /* ArtistTableViewCell.swift in Sources */,
 			);

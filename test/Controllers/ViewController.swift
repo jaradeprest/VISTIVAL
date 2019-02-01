@@ -13,7 +13,6 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     let dao = DAO.init()
     @IBOutlet weak var tblArtist: UITableView!
-
     
     override func viewDidLoad() {
         super.viewDidLoad()

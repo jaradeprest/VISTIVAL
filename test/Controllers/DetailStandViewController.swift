@@ -10,21 +10,19 @@ import UIKit
 
 class DetailStandViewController: UIViewController {
 
+    
+    @IBOutlet weak var lblStandName: UILabel!
+    @IBOutlet weak var tvStand: UITextView!
+    @IBOutlet weak var imageStand: UIImageView!
+    var clickedStand:Stand?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        lblStandName.text = clickedStand!.standNaam
+        imageStand.image = UIImage.init(named: clickedStand!.afbeeldingStandNaam!)
+        tvStand.text = "Elke stand is open gedurende het hele VISTIVAL." //KAN NOG MET LINK NAAR VERSCHILLENDE STANDINFO (EXTRA ALS TIJD OVER IS)
+        
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
