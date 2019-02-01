@@ -83,7 +83,7 @@
             </objects>
             <point key="canvasLocation" x="1056.8" y="-425.03748125937034"/>
         </scene>
-        <!--View Controller-->
+        <!--Line-Up-->
         <scene sceneID="rUS-GX-SZf">
             <objects>
                 <viewController id="dLj-X0-lAS" customClass="ViewController" customModule="test" customModuleProvider="target" sceneMemberID="viewController">
@@ -91,26 +91,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="gdj-4h-DcK">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="gdj-4h-DcK">
                                 <rect key="frame" x="0.0" y="64" width="375" height="554"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="artistCell" id="7pE-aT-s8h" customClass="ArtistTableViewCell" customModule="test" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="55.5" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="7pE-aT-s8h" id="kQh-YA-Osy">
                                             <rect key="frame" x="0.0" y="0.0" width="342" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dVe-CJ-xgi">
-                                                    <rect key="frame" x="15" y="12" width="95" height="21"/>
+                                                    <rect key="frame" x="15" y="12" width="130" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Artist Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fc9-2Z-RfE">
-                                                    <rect key="frame" x="118" y="12" width="202" height="21"/>
+                                                    <rect key="frame" x="153" y="12" width="181" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -125,6 +125,10 @@
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="dLj-X0-lAS" id="PQ7-gX-eBp"/>
+                                    <outlet property="delegate" destination="dLj-X0-lAS" id="g6Z-KW-IlT"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -136,7 +140,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="axB-dd-iUo"/>
                     </view>
-                    <navigationItem key="navigationItem" id="N3S-H0-fnh"/>
+                    <navigationItem key="navigationItem" title="Line-Up" id="N3S-H0-fnh">
+                        <barButtonItem key="backBarButtonItem" title="Back to line-up" id="Ubo-dY-v6w"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="tblArtist" destination="gdj-4h-DcK" id="jx1-Dy-7E8"/>
                     </connections>
@@ -159,26 +165,26 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5uh-2l-EOD">
-                                <rect key="frame" x="60" y="457" width="255" height="128"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="255" id="K3D-Nx-EJz"/>
-                                    <constraint firstAttribute="height" constant="128" id="bLT-9a-vXI"/>
-                                </constraints>
-                            </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="oLV-Ug-8sp">
-                                <rect key="frame" x="16" y="151" width="343" height="274"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="oLV-Ug-8sp">
+                                <rect key="frame" x="16" y="151" width="343" height="121"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation </string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5uh-2l-EOD">
+                                <rect key="frame" x="0.0" y="325" width="375" height="219"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="375" id="K3D-Nx-EJz"/>
+                                    <constraint firstAttribute="height" constant="219" id="bLT-9a-vXI"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="oLV-Ug-8sp" firstAttribute="top" secondItem="zPv-NH-Sbw" secondAttribute="bottom" constant="31" id="7EK-xm-FJ7"/>
-                            <constraint firstItem="BIs-y1-tod" firstAttribute="bottom" secondItem="5uh-2l-EOD" secondAttribute="bottom" constant="33" id="QMh-Rv-0Qj"/>
-                            <constraint firstItem="5uh-2l-EOD" firstAttribute="top" secondItem="oLV-Ug-8sp" secondAttribute="bottom" constant="32" id="Vqg-3n-NNh"/>
+                            <constraint firstItem="BIs-y1-tod" firstAttribute="bottom" secondItem="5uh-2l-EOD" secondAttribute="bottom" constant="74" id="QMh-Rv-0Qj"/>
+                            <constraint firstItem="5uh-2l-EOD" firstAttribute="top" secondItem="oLV-Ug-8sp" secondAttribute="bottom" constant="53" id="Vqg-3n-NNh"/>
                             <constraint firstItem="zPv-NH-Sbw" firstAttribute="leading" secondItem="BIs-y1-tod" secondAttribute="leading" constant="16" id="X86-6g-UKj"/>
                             <constraint firstItem="BIs-y1-tod" firstAttribute="trailing" secondItem="oLV-Ug-8sp" secondAttribute="trailing" constant="16" id="cIO-wa-c28"/>
                             <constraint firstItem="zPv-NH-Sbw" firstAttribute="top" secondItem="BIs-y1-tod" secondAttribute="top" constant="26" id="e9X-DS-ZrV"/>

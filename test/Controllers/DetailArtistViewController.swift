@@ -21,7 +21,7 @@ class DetailArtistViewController: UIViewController {
         super.viewDidLoad()
 
         lblArtistName.text = clickedArtist!.bandNaam
-        tvBand.text = "Deze band bestaat uit: \(clickedArtist!.bandLeden!)"
+        tvBand.text = "Deze band bestaat uit: \(clickedArtist!.bandLeden!). \nCHECK IT OUT BELOW!"
         imageBand.image = UIImage.init(named: clickedArtist!.afbeeldingsNaam!)
         
     }

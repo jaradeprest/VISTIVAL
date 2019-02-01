@@ -10,12 +10,14 @@ import Foundation
 
 class Artist {
     
+    var id:Int?
     var bandNaam:String?
     var bandLeden:String?
     var speelTijd:String?
     var afbeeldingsNaam:String?
     
-    init(bandNaam:String, bandLeden:String, speelTijd:String, afbeeldingsNaam:String) {
+    init(id:Int, bandNaam:String, bandLeden:String, speelTijd:String, afbeeldingsNaam:String) {
+        self.id = id
         self.bandNaam = bandNaam
         self.bandLeden = bandLeden
         self.speelTijd = speelTijd

@@ -33,7 +33,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let artistCell : ArtistTableViewCell = tableView.dequeueReusableCell(withIdentifier: "ArtistCell") as! ArtistTableViewCell
+        let artistCell : ArtistTableViewCell = tableView.dequeueReusableCell(withIdentifier: "artistCell") as! ArtistTableViewCell
         let artist = dao.playtimeLijst![indexPath.section].artistLijst[indexPath.row]
         artistCell.lblName.text = artist.bandNaam
         artistCell.lblTime.text = artist.speelTijd
