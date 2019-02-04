@@ -11,16 +11,17 @@ import Foundation
 class Favorite{
     
     var liked:[Artist]
+    var artist:Artist?
     
     init() {
         self.liked=[Artist].init()
     }
     
     func addToLiked() -> [Artist] {
-        let artist:Artist?
-        if artist!.isFavorite==true{
+        //FUNCTIE OM FAVORIETEN UIT ARTISTKLASSE TOE TE VOEGEN AAN FAVORITEKLASSE
+        if artist?.isFavorite == true{
             liked.append(artist!)
         }
-
+        return liked
     }
 }

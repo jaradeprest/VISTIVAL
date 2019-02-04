@@ -8,7 +8,7 @@
 
 import UIKit
 
-/*class LikedViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class LikedViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
  
     let favorites = Favorite.init()
     @IBOutlet weak var tblFavorites: UITableView!
@@ -19,14 +19,32 @@ import UIKit
         // Do any additional setup after loading the view.
     }
     
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return favorites.liked.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let artistCell : ArtistTableViewCell = tableView.dequeueReusableCell(withIdentifier: "artistCell", for: indexPath) as! ArtistTableViewCell
-        let artist = favorites.liked[Artist]
-        artistCell.lblName.text = liked[]
-    }*/
+        let cell : LikedTableViewCell = tableView.dequeueReusableCell(withIdentifier: "artistCell") as! LikedTableViewCell
+        let favorite = favorites.liked[indexPath.row]
+        cell.lblName.text = favorite.bandNaam
+        cell.lblSpeelTijd.text = favorite.speelTijd
+        return cell
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let bestemming:DetailArtistViewController=segue.destination as! DetailArtistViewController
+        let clickedPlace = tblFavorites.indexPathForSelectedRow
+        let artist = favorites.liked[clickedPlace!.row]
+        bestemming.clickedArtist = artist
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        tblFavorites.reloadData()
+    }
     
 }

@@ -476,7 +476,7 @@ Kom dat zien kom dat zien!</string>
                                 <rect key="frame" x="0.0" y="64" width="375" height="554"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="artistCell" id="H4Q-TT-hAI" customClass="ArtistTableViewCell" customModule="test" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="artistCell" id="H4Q-TT-hAI" customClass="LikedTableViewCell" customModule="test" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="55.5" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="H4Q-TT-hAI" id="zaJ-iZ-oBp">
@@ -501,10 +501,16 @@ Kom dat zien kom dat zien!</string>
                                                     <rect key="frame" x="308" y="7" width="34" height="30"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <state key="normal" title="♥︎"/>
+                                                    <connections>
+                                                        <action selector="favouritePressed:" destination="H4Q-TT-hAI" eventType="touchUpInside" id="QNi-op-iRu"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="btnFav" destination="jlR-LB-1O8" id="KQw-6V-em4"/>
+                                            <outlet property="lblName" destination="7FI-Sf-tKz" id="eiD-Fw-5Pb"/>
+                                            <outlet property="lblSpeelTijd" destination="eya-Sh-GWI" id="4vn-3a-KB4"/>
                                             <segue destination="A54-um-mfV" kind="show" id="31F-Bb-JTt"/>
                                         </connections>
                                     </tableViewCell>
