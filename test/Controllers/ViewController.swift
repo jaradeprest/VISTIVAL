@@ -46,5 +46,13 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         bestemming.clickedArtist = artist
     }
     
+    
+    @IBAction func btnAddFavorite(_ sender: UIButton) {
+        let clickedArtist = tblArtist.indexPathForSelectedRow
+        if dao.playtimeLijst! [clickedArtist!.section].artistLijst[clickedArtist!.row].isFavorite==false{
+            dao.playtimeLijst! [clickedArtist!.section].artistLijst[clickedArtist!.row].isFavorite=true
+        }else{dao.playtimeLijst! [clickedArtist!.section].artistLijst[clickedArtist!.row].isFavorite=false}
+    }
+    
 }
 

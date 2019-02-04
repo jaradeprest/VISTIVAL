@@ -15,6 +15,7 @@ class Artist {
     var bandLeden:String?
     var speelTijd:String?
     var afbeeldingsNaam:String?
+    var isFavorite:Bool?
     
     init(id:Int, bandNaam:String, bandLeden:String, speelTijd:String, afbeeldingsNaam:String) {
         self.id = id
@@ -22,5 +23,6 @@ class Artist {
         self.bandLeden = bandLeden
         self.speelTijd = speelTijd
         self.afbeeldingsNaam = afbeeldingsNaam
+        self.isFavorite = false
     }
 }

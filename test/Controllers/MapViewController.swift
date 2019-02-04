@@ -24,17 +24,17 @@ class MapViewController: UIViewController,  MKMapViewDelegate, CLLocationManager
         myLocationManager.desiredAccuracy = kCLLocationAccuracyBest
 
         let podium = myPin.init(coordinate: CLLocationCoordinate2D.init(latitude: 51.15299, longitude: 2.721468), title: "Podium", subtitle: "Optredens!")
-        let yoga = myPin.init(coordinate: CLLocationCoordinate2D.init(latitude: 51.151368, longitude: 2.720491), title: "Yoga", subtitle: "Volg hier lessen om 18:00-19:00 en om 20:00-21:00.")
-        let fitness = myPin.init(coordinate: CLLocationCoordinate2D.init(latitude: 51.151987, longitude: 2.722599), title: "Fitness", subtitle: "Fitnesstoestellen ter beschikking heel het weekend! Les op zaterdagmiddag van 17:00-18:30.")
-        let surf = myPin.init(coordinate: CLLocationCoordinate2D.init(latitude: 51.153138, longitude: 2.720883), title: "Surflessen", subtitle: "Volg hier surfles op vrijdag van 19:00-20:00 en zaterdag van 17:00-18:00 en 18:30-19:30.")
-        let dans = myPin.init(coordinate: CLLocationCoordinate2D.init(latitude: 51.151839, longitude: 2.721961), title: "Dansles", subtitle: "Volg hier dansles op vrijdag en zaterdag van 20:00-22:00.")
+        let yoga = myPin.init(coordinate: CLLocationCoordinate2D.init(latitude: 51.151368, longitude: 2.720491), title: "Yoga", subtitle: "Les om 18:00-19:00 en 20:00-21:00.")
+        let fitness = myPin.init(coordinate: CLLocationCoordinate2D.init(latitude: 51.151987, longitude: 2.722599), title: "Fitness", subtitle: "Fitnesstoestellen ter beschikking heel het weekend!")
+        let surf = myPin.init(coordinate: CLLocationCoordinate2D.init(latitude: 51.153138, longitude: 2.720883), title: "Surflessen", subtitle: "Surfles zaterdag van 17:00-19:00")
+        let dans = myPin.init(coordinate: CLLocationCoordinate2D.init(latitude: 51.151839, longitude: 2.721961), title: "Dansles", subtitle: "Dans van 20:00-22:00.")
         let burger = myPin.init(coordinate: CLLocationCoordinate2D.init(latitude: 51.151718, longitude: 2.721366), title: "Voor de regionale BURGER", subtitle: "Lekker en niet gezond.")
         let loempia = myPin.init(coordinate: CLLocationCoordinate2D.init(latitude: 51.151664 , longitude: 2.721183), title: "Oempa Loempia", subtitle: "Meer dan een gewone loempia!")
         let frituur = myPin.init(coordinate: CLLocationCoordinate2D.init(latitude: 51.151536, longitude: 2.720867), title: "De Puntzak", subtitle: "Je favoriete soort zak ;)")
-        let bar = myPin.init(coordinate: CLLocationCoordinate2D.init(latitude: 51.15153, longitude: 2.71952), title: "Bar Bier", subtitle: "Hier vind je bier bier bier. BIER HIER BIER HIER!")
+        let bar = myPin.init(coordinate: CLLocationCoordinate2D.init(latitude: 51.15153, longitude: 2.71952), title: "Bar Bier", subtitle: "BIER HIER BIER HIER!")
         let cocktail = myPin.init(coordinate: CLLocationCoordinate2D.init(latitude: 51.15123, longitude: 2.71952), title: "Cocktail Bar", subtitle: "Overprised, maar oversized!")
         let champagn = myPin.init(coordinate: CLLocationCoordinate2D.init(latitude: 51.15231, longitude: 2.72261), title: "BIG SPENDERS", subtitle: "Betalen kan enkel met briefjes van €200")
-        let market = myPin.init(coordinate: CLLocationCoordinate2D.init(latitude: 51.151455, longitude: 2.720679), title: "Sea Market", subtitle: "Hier vind je alles wat je hart verlangd: een vers onderbroek, een nieuwe tent, maar ook armbandjes!")
+        let market = myPin.init(coordinate: CLLocationCoordinate2D.init(latitude: 51.151455, longitude: 2.720679), title: "Sea Market", subtitle: "Een onderbroek, een tent, maar ook armbandjes!")
         
         
         
@@ -87,5 +87,6 @@ class MapViewController: UIViewController,  MKMapViewDelegate, CLLocationManager
         customView.canShowCallout = true
         return customView
     }
+    
 }
 

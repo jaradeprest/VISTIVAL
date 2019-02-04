@@ -67,6 +67,7 @@
 		5154E6D322034C4C0079251B /* fete.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5154E6D222034C4C0079251B /* fete.jpg */; };
 		5154E6D522034C820079251B /* goose.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5154E6D422034C820079251B /* goose.jpg */; };
 		5154E6D722034CA90079251B /* tlp.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5154E6D622034CA90079251B /* tlp.jpg */; };
+		5193BB6922083B6A00F565DC /* Favorite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5193BB6822083B6A00F565DC /* Favorite.swift */; };
 		51A5D90222043889009CA881 /* burger.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 51A5D90122043889009CA881 /* burger.jpg */; };
 		51A5D90422043985009CA881 /* loempia.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 51A5D90322043985009CA881 /* loempia.jpg */; };
 		51A5D906220439E3009CA881 /* friet.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 51A5D905220439E3009CA881 /* friet.jpg */; };
@@ -145,6 +146,7 @@
 		5154E6D222034C4C0079251B /* fete.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = fete.jpg; path = "images eindproject/fete.jpg"; sourceTree = SOURCE_ROOT; };
 		5154E6D422034C820079251B /* goose.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = goose.jpg; path = "images eindproject/goose.jpg"; sourceTree = SOURCE_ROOT; };
 		5154E6D622034CA90079251B /* tlp.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = tlp.jpg; path = "images eindproject/tlp.jpg"; sourceTree = SOURCE_ROOT; };
+		5193BB6822083B6A00F565DC /* Favorite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Favorite.swift; sourceTree = "<group>"; };
 		51A5D90122043889009CA881 /* burger.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = burger.jpg; path = "images eindproject/burger.jpg"; sourceTree = SOURCE_ROOT; };
 		51A5D90322043985009CA881 /* loempia.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = loempia.jpg; path = "images eindproject/loempia.jpg"; sourceTree = SOURCE_ROOT; };
 		51A5D905220439E3009CA881 /* friet.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = friet.jpg; path = "images eindproject/friet.jpg"; sourceTree = SOURCE_ROOT; };
@@ -229,6 +231,7 @@
 				5154E6BE2203452E0079251B /* Standsoort.swift */,
 				51A5D90F22045CFA009CA881 /* liked.swift */,
 				51A5D91B22047946009CA881 /* myPin.swift */,
+				5193BB6822083B6A00F565DC /* Favorite.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -426,6 +429,7 @@
 				5154E6BC2203441C0079251B /* DetailStandViewController.swift in Sources */,
 				51A5D918220464BE009CA881 /* MyTabBarController.swift in Sources */,
 				5154E65D2202F5220079251B /* ViewController.swift in Sources */,
+				5193BB6922083B6A00F565DC /* Favorite.swift in Sources */,
 				5154E6B2220343C10079251B /* Stand.swift in Sources */,
 				5154E6B0220343600079251B /* Playtime.swift in Sources */,
 				51A5D90E22044FD6009CA881 /* StandsViewController.swift in Sources */,

@@ -13,6 +13,7 @@ class DetailArtistViewController: UIViewController {
     @IBOutlet weak var lblArtistName: UILabel!
     @IBOutlet weak var tvBand: UITextView!
     @IBOutlet weak var imageBand: UIImageView!
+    @IBOutlet weak var btnFavorite: UIButton!
     var clickedArtist:Artist?
     
     override func viewDidLoad() {
@@ -21,7 +22,9 @@ class DetailArtistViewController: UIViewController {
         lblArtistName.text = clickedArtist!.bandNaam
         tvBand.text = "Deze band bestaat uit: \(clickedArtist!.bandLeden!). \nCHECK IT OUT BELOW!"
         imageBand.image = UIImage.init(named: clickedArtist!.afbeeldingsNaam!)
-        
+        if clickedArtist?.isFavorite==true{
+            btnFavorite.tintColor = UIColor.red
+        }else{btnFavorite.tintColor = UIColor.black}
     }
 
 }

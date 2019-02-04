@@ -159,6 +159,7 @@
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" showsScale="YES" translatesAutoresizingMaskIntoConstraints="NO" id="A1b-o8-frc">
                                 <rect key="frame" x="0.0" y="20" width="375" height="598"/>
+                                <gestureRecognizers/>
                                 <connections>
                                     <outlet property="delegate" destination="JcJ-HJ-PrM" id="C1N-u9-XhD"/>
                                 </connections>
@@ -172,7 +173,7 @@
                                     <segment title="Map"/>
                                     <segment title="Satellite"/>
                                 </segments>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" red="0.41288527400000002" green="0.03930329623" blue="0.66114619009999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <action selector="mapKind:" destination="JcJ-HJ-PrM" eventType="valueChanged" id="c2a-l1-rjP"/>
                                 </connections>
@@ -235,6 +236,9 @@
                                                     <rect key="frame" x="308" y="7" width="34" height="30"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <state key="normal" title="♡"/>
+                                                    <connections>
+                                                        <action selector="btnAddFavorite:" destination="dLj-X0-lAS" eventType="touchUpInside" id="jN1-QJ-Qzn"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                         </tableViewCellContentView>
@@ -326,6 +330,7 @@
                         <viewLayoutGuide key="safeArea" id="BIs-y1-tod"/>
                     </view>
                     <connections>
+                        <outlet property="btnFavorite" destination="IPW-KM-6qt" id="FBr-SY-nNc"/>
                         <outlet property="imageBand" destination="5uh-2l-EOD" id="Qcv-WX-H6l"/>
                         <outlet property="lblArtistName" destination="zPv-NH-Sbw" id="26a-qa-wv8"/>
                         <outlet property="tvBand" destination="oLV-Ug-8sp" id="ga1-zH-Cr8"/>
