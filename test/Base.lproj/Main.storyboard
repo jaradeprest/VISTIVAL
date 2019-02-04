@@ -235,14 +235,16 @@
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4yh-su-7uR">
                                                     <rect key="frame" x="308" y="7" width="34" height="30"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <state key="normal" title="♡"/>
                                                     <connections>
-                                                        <action selector="btnAddFavorite:" destination="dLj-X0-lAS" eventType="touchUpInside" id="jN1-QJ-Qzn"/>
+                                                        <action selector="favouritePressed:" destination="7pE-aT-s8h" eventType="touchUpInside" id="eiM-k9-zhh"/>
                                                     </connections>
                                                 </button>
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="btnFav" destination="4yh-su-7uR" id="N1m-Lc-VpT"/>
                                             <outlet property="lblName" destination="fc9-2Z-RfE" id="2DA-na-Hlq"/>
                                             <outlet property="lblTime" destination="dVe-CJ-xgi" id="a4m-IA-cW8"/>
                                             <segue destination="Miz-2h-D70" kind="show" id="XnQ-gz-9mL"/>
@@ -310,7 +312,11 @@
                                     <constraint firstAttribute="height" constant="45" id="N43-kC-Scq"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="♡"/>
+                                <connections>
+                                    <action selector="btnFavorite:" destination="Miz-2h-D70" eventType="touchUpInside" id="Jb6-0X-nI0"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -470,7 +476,7 @@ Kom dat zien kom dat zien!</string>
                                 <rect key="frame" x="0.0" y="64" width="375" height="554"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="H4Q-TT-hAI" customClass="LikedTableViewCell" customModule="test" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="artistCell" id="H4Q-TT-hAI" customClass="ArtistTableViewCell" customModule="test" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="55.5" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="H4Q-TT-hAI" id="zaJ-iZ-oBp">
@@ -521,6 +527,9 @@ Kom dat zien kom dat zien!</string>
                     <navigationItem key="navigationItem" title="Liked Bands" id="QZn-0G-mLH">
                         <barButtonItem key="backBarButtonItem" title="Back to liked bands" id="dhm-92-q97"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="tblFavorites" destination="Xgn-9f-Fjh" id="ukK-6c-73Q"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="E2A-AB-JS9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

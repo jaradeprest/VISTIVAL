@@ -10,7 +10,7 @@ import UIKit
 
 class StandsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
-    let dao = DAO.init()
+     let dao = DAO.instance
     @IBOutlet weak var tblStands: UITableView!
     
     override func viewDidLoad() {

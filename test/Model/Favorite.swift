@@ -15,4 +15,12 @@ class Favorite{
     init() {
         self.liked=[Artist].init()
     }
+    
+    func addToLiked() -> [Artist] {
+        let artist:Artist?
+        if artist!.isFavorite==true{
+            liked.append(artist!)
+        }
+
+    }
 }

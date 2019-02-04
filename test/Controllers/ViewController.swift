@@ -11,7 +11,7 @@ import UIKit
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
     
-    let dao = DAO.init()
+    let dao = DAO.instance
     @IBOutlet weak var tblArtist: UITableView!
     
     override func viewDidLoad() {
@@ -36,6 +36,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         let artist = dao.playtimeLijst![indexPath.section].artistLijst[indexPath.row]
         artistCell.lblName.text = artist.bandNaam
         artistCell.lblTime.text = artist.speelTijd
+        artistCell.artist = artist
         return artistCell
     }
     
@@ -46,13 +47,10 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         bestemming.clickedArtist = artist
     }
     
-    
-    @IBAction func btnAddFavorite(_ sender: UIButton) {
-        let clickedArtist = tblArtist.indexPathForSelectedRow
-        if dao.playtimeLijst! [clickedArtist!.section].artistLijst[clickedArtist!.row].isFavorite==false{
-            dao.playtimeLijst! [clickedArtist!.section].artistLijst[clickedArtist!.row].isFavorite=true
-        }else{dao.playtimeLijst! [clickedArtist!.section].artistLijst[clickedArtist!.row].isFavorite=false}
+    override func viewDidAppear(_ animated: Bool) {
+        tblArtist.reloadData()
     }
+
     
 }
 

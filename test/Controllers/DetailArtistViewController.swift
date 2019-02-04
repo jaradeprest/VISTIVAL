@@ -24,7 +24,24 @@ class DetailArtistViewController: UIViewController {
         imageBand.image = UIImage.init(named: clickedArtist!.afbeeldingsNaam!)
         if clickedArtist?.isFavorite==true{
             btnFavorite.tintColor = UIColor.red
-        }else{btnFavorite.tintColor = UIColor.black}
+        }else{btnFavorite.tintColor = UIColor.darkGray}
     }
+
+    @IBAction func btnFavorite(_ sender: Any) {
+        for dag in DAO.instance.playtimeLijst!{
+            for info in dag.artistLijst {
+                if clickedArtist === info{
+                    info.isFavorite = !info.isFavorite!
+                    if info.isFavorite! {
+                        btnFavorite.tintColor = UIColor.red
+                    }else{
+                        btnFavorite.tintColor = UIColor.darkGray
+                    }
+                }
+            }
+    }
+
+}
+
 
 }

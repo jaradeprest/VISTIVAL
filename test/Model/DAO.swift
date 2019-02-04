@@ -10,10 +10,12 @@ import Foundation
 
 class DAO{
     
+    static let instance:DAO = DAO.init()
+    
     var playtimeLijst:[Playtime]?
     var standSoortLijst:[Standsoort]?
     
-    init() {
+    private init() {
         //ARTIESTEN
         let fabiola = Artist.init(id:12, bandNaam: "2Fabiola", bandLeden: "Pat Krimson, Olivier Adams & Zohra Aït-Fath", speelTijd: "01:00-02:30", afbeeldingsNaam: "2fabiola.jpg")
         let admiral = Artist.init(id:1, bandNaam: "Admiral Freebee", bandLeden: "Tom Van Laere", speelTijd: "19:00-20:00", afbeeldingsNaam: "admiral.jpg")

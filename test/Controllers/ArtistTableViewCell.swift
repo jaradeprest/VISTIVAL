@@ -10,9 +10,10 @@ import UIKit
 
 class ArtistTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var btnFav: UIButton!
     @IBOutlet weak var lblName: UILabel!
     @IBOutlet weak var lblTime: UILabel!
-    
+    var artist:Artist?
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -22,7 +23,26 @@ class ArtistTableViewCell: UITableViewCell {
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
-        // Configure the view for the selected state
+        if artist?.isFavorite==true{
+            btnFav.tintColor = UIColor.red
+        }else{btnFav.tintColor = UIColor.darkGray}
+        
     }
+    
+    @IBAction func favouritePressed(_ sender: Any) {
+        for dag in DAO.instance.playtimeLijst!{
+            for info in dag.artistLijst {
+                if artist === info{
+                    info.isFavorite = !info.isFavorite!
+                    if info.isFavorite! {
+                        btnFav.tintColor = UIColor.red
+                    }else{
+                        btnFav.tintColor = UIColor.darkGray
+                    }
+                }
+            }
+        }
+    }
+    
 
 }

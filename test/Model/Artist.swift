@@ -25,4 +25,5 @@ class Artist {
         self.afbeeldingsNaam = afbeeldingsNaam
         self.isFavorite = false
     }
+    
 }

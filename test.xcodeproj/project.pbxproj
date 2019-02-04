@@ -75,7 +75,6 @@
 		51A5D90A22043A5B009CA881 /* cocktail.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 51A5D90922043A5B009CA881 /* cocktail.jpg */; };
 		51A5D90C22043A96009CA881 /* champagnbar.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 51A5D90B22043A96009CA881 /* champagnbar.jpg */; };
 		51A5D90E22044FD6009CA881 /* StandsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51A5D90D22044FD6009CA881 /* StandsViewController.swift */; };
-		51A5D91022045CFA009CA881 /* liked.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51A5D90F22045CFA009CA881 /* liked.swift */; };
 		51A5D91222045E6C009CA881 /* LikedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51A5D91122045E6C009CA881 /* LikedViewController.swift */; };
 		51A5D91422045E8D009CA881 /* LikedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51A5D91322045E8D009CA881 /* LikedTableViewCell.swift */; };
 		51A5D918220464BE009CA881 /* MyTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51A5D917220464BE009CA881 /* MyTabBarController.swift */; };
@@ -154,7 +153,6 @@
 		51A5D90922043A5B009CA881 /* cocktail.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = cocktail.jpg; path = "images eindproject/cocktail.jpg"; sourceTree = SOURCE_ROOT; };
 		51A5D90B22043A96009CA881 /* champagnbar.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = champagnbar.jpg; path = "images eindproject/champagnbar.jpg"; sourceTree = SOURCE_ROOT; };
 		51A5D90D22044FD6009CA881 /* StandsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandsViewController.swift; sourceTree = "<group>"; };
-		51A5D90F22045CFA009CA881 /* liked.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = liked.swift; sourceTree = "<group>"; };
 		51A5D91122045E6C009CA881 /* LikedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikedViewController.swift; sourceTree = "<group>"; };
 		51A5D91322045E8D009CA881 /* LikedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikedTableViewCell.swift; sourceTree = "<group>"; };
 		51A5D917220464BE009CA881 /* MyTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTabBarController.swift; sourceTree = "<group>"; };
@@ -229,7 +227,6 @@
 				5154E6B1220343C10079251B /* Stand.swift */,
 				5154E6B3220343CE0079251B /* DAO.swift */,
 				5154E6BE2203452E0079251B /* Standsoort.swift */,
-				51A5D90F22045CFA009CA881 /* liked.swift */,
 				51A5D91B22047946009CA881 /* myPin.swift */,
 				5193BB6822083B6A00F565DC /* Favorite.swift */,
 			);
@@ -421,7 +418,6 @@
 				51A5D91222045E6C009CA881 /* LikedViewController.swift in Sources */,
 				5154E6BF2203452E0079251B /* Standsoort.swift in Sources */,
 				5154E6B8220343F60079251B /* StandTableViewCell.swift in Sources */,
-				51A5D91022045CFA009CA881 /* liked.swift in Sources */,
 				5154E6B4220343CE0079251B /* DAO.swift in Sources */,
 				5154E6AE220343540079251B /* Artist.swift in Sources */,
 				51A5D91422045E8D009CA881 /* LikedTableViewCell.swift in Sources */,
