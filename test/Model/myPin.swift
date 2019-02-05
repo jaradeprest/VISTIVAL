@@ -16,10 +16,12 @@ class myPin : NSObject, MKAnnotation {
     //optioneel, eerder voor pop up boven pins
     var title: String?
     var subtitle: String?
+    var afb: UIImage?
     
-    init(coordinate: CLLocationCoordinate2D, title:String, subtitle:String) {
+    init(coordinate: CLLocationCoordinate2D, title:String, subtitle:String, afb:UIImage) {
         self.coordinate = coordinate
         self.title = title
         self.subtitle = subtitle
+        self.afb = afb
     }
 }

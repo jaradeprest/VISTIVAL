@@ -23,18 +23,18 @@ class MapViewController: UIViewController,  MKMapViewDelegate, CLLocationManager
         myLocationManager.requestWhenInUseAuthorization()
         myLocationManager.desiredAccuracy = kCLLocationAccuracyBest
 
-        let podium = myPin.init(coordinate: CLLocationCoordinate2D.init(latitude: 51.15299, longitude: 2.721468), title: "Podium", subtitle: "Optredens!")
-        let yoga = myPin.init(coordinate: CLLocationCoordinate2D.init(latitude: 51.151368, longitude: 2.720491), title: "Yoga", subtitle: "Les om 18:00-19:00 en 20:00-21:00.")
-        let fitness = myPin.init(coordinate: CLLocationCoordinate2D.init(latitude: 51.151987, longitude: 2.722599), title: "Fitness", subtitle: "Fitnesstoestellen ter beschikking heel het weekend!")
-        let surf = myPin.init(coordinate: CLLocationCoordinate2D.init(latitude: 51.153138, longitude: 2.720883), title: "Surflessen", subtitle: "Surfles zaterdag van 17:00-19:00")
-        let dans = myPin.init(coordinate: CLLocationCoordinate2D.init(latitude: 51.151839, longitude: 2.721961), title: "Dansles", subtitle: "Dans van 20:00-22:00.")
-        let burger = myPin.init(coordinate: CLLocationCoordinate2D.init(latitude: 51.151718, longitude: 2.721366), title: "Voor de regionale BURGER", subtitle: "Lekker en niet gezond.")
-        let loempia = myPin.init(coordinate: CLLocationCoordinate2D.init(latitude: 51.151664 , longitude: 2.721183), title: "Oempa Loempia", subtitle: "Meer dan een gewone loempia!")
-        let frituur = myPin.init(coordinate: CLLocationCoordinate2D.init(latitude: 51.151536, longitude: 2.720867), title: "De Puntzak", subtitle: "Je favoriete soort zak ;)")
-        let bar = myPin.init(coordinate: CLLocationCoordinate2D.init(latitude: 51.15153, longitude: 2.71952), title: "Bar Bier", subtitle: "BIER HIER BIER HIER!")
-        let cocktail = myPin.init(coordinate: CLLocationCoordinate2D.init(latitude: 51.15123, longitude: 2.71952), title: "Cocktail Bar", subtitle: "Overprised, maar oversized!")
-        let champagn = myPin.init(coordinate: CLLocationCoordinate2D.init(latitude: 51.15231, longitude: 2.72261), title: "BIG SPENDERS", subtitle: "Betalen kan enkel met briefjes van €200")
-        let market = myPin.init(coordinate: CLLocationCoordinate2D.init(latitude: 51.151455, longitude: 2.720679), title: "Sea Market", subtitle: "Een onderbroek, een tent, maar ook armbandjes!")
+        let podium = myPin.init(coordinate: CLLocationCoordinate2D.init(latitude: 51.15299, longitude: 2.721468), title: "Podium", subtitle: "Optredens!", afb: UIImage.init(named: "sfeer1.jpg")!)
+        let yoga = myPin.init(coordinate: CLLocationCoordinate2D.init(latitude: 51.151368, longitude: 2.720491), title: "Yoga", subtitle: "Les om 18:00-19:00 en 20:00-21:00.", afb: UIImage.init(named: "yoga2.jpg")!)
+        let fitness = myPin.init(coordinate: CLLocationCoordinate2D.init(latitude: 51.151987, longitude: 2.722599), title: "Fitness", subtitle: "Fitnesstoestellen ter beschikking heel het weekend!", afb: UIImage.init(named: "workout.jpg")!)
+        let surf = myPin.init(coordinate: CLLocationCoordinate2D.init(latitude: 51.153138, longitude: 2.720883), title: "Surflessen", subtitle: "Surfles zaterdag van 17:00-19:00", afb: UIImage.init(named: "surf3.jpg")!)
+        let dans = myPin.init(coordinate: CLLocationCoordinate2D.init(latitude: 51.151839, longitude: 2.721961), title: "Dansles", subtitle: "Dans van 20:00-22:00.", afb: UIImage.init(named: "dans.jpg")!)
+        let burger = myPin.init(coordinate: CLLocationCoordinate2D.init(latitude: 51.151718, longitude: 2.721366), title: "Voor de regionale BURGER", subtitle: "Lekker en niet gezond.", afb: UIImage.init(named: "burger.jpg")!)
+        let loempia = myPin.init(coordinate: CLLocationCoordinate2D.init(latitude: 51.151664 , longitude: 2.721183), title: "Oempa Loempia", subtitle: "Meer dan een gewone loempia!", afb: UIImage.init(named: "loempia.jpg")!)
+        let frituur = myPin.init(coordinate: CLLocationCoordinate2D.init(latitude: 51.151536, longitude: 2.720867), title: "De Puntzak", subtitle: "Je favoriete soort zak ;)", afb: UIImage.init(named: "friet.jpg")!)
+        let bar = myPin.init(coordinate: CLLocationCoordinate2D.init(latitude: 51.15153, longitude: 2.71952), title: "Bar Bier", subtitle: "BIER HIER BIER HIER!", afb: UIImage.init(named: "bar.jpg")!)
+        let cocktail = myPin.init(coordinate: CLLocationCoordinate2D.init(latitude: 51.15123, longitude: 2.71952), title: "Cocktail Bar", subtitle: "Overprised, maar oversized!", afb: UIImage.init(named: "cocktail.jpg")!)
+        let champagn = myPin.init(coordinate: CLLocationCoordinate2D.init(latitude: 51.15231, longitude: 2.72261), title: "BIG SPENDERS", subtitle: "Betalen kan enkel met briefjes van €200", afb: UIImage.init(named: "champagnbar.jpg")!)
+        let market = myPin.init(coordinate: CLLocationCoordinate2D.init(latitude: 51.151455, longitude: 2.720679), title: "Sea Market", subtitle: "Een onderbroek, een tent, maar ook armbandjes!", afb: UIImage.init(named: "market.jpg")!)
         
         
         
@@ -85,6 +85,15 @@ class MapViewController: UIViewController,  MKMapViewDelegate, CLLocationManager
         let customView = MKPinAnnotationView.init(annotation: myPin, reuseIdentifier: "Pin")
         customView.pinTintColor = UIColor.init(red: 120/180, green: 20/180, blue: 180/180, alpha: 1)
         customView.canShowCallout = true
+        
+        //Afbeelding in annotation callout
+        let scale = CGRect.init(x: 0, y: 0, width: 50, height: 50)
+        let viewAfb = UIImageView.init(frame: scale)
+        viewAfb.image = myPin!.afb
+        customView.leftCalloutAccessoryView = viewAfb
+        //!!!!!!!LETTERTYPE VERANDEREN!!!
+        customView.sizeToFit()
+        
         return customView
     }
     
