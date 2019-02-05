@@ -91,7 +91,7 @@ class MapViewController: UIViewController,  MKMapViewDelegate, CLLocationManager
         let viewAfb = UIImageView.init(frame: scale)
         viewAfb.image = myPin!.afb
         customView.leftCalloutAccessoryView = viewAfb
-        //!!!!!!!LETTERTYPE VERANDEREN!!!
+        //!!!!!!!LETTERTYPE VERANDEREN!!!!!!!
         customView.sizeToFit()
         
         return customView

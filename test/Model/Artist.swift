@@ -16,14 +16,16 @@ class Artist {
     var speelTijd:String?
     var afbeeldingsNaam:String?
     var isFavorite:Bool?
+    var song:String?
     
-    init(id:Int, bandNaam:String, bandLeden:String, speelTijd:String, afbeeldingsNaam:String) {
+    init(id:Int, bandNaam:String, bandLeden:String, speelTijd:String, afbeeldingsNaam:String, song:String) {
         self.id = id
         self.bandNaam = bandNaam
         self.bandLeden = bandLeden
         self.speelTijd = speelTijd
         self.afbeeldingsNaam = afbeeldingsNaam
         self.isFavorite = false
+        self.song = song
     }
     
 }

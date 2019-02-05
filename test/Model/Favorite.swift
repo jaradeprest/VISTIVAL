@@ -17,11 +17,13 @@ class Favorite{
         self.liked=[Artist].init()
     }
     
-    func addToLiked() -> [Artist] {
+    /*func addToLiked() -> [Artist] {
         //FUNCTIE OM FAVORIETEN UIT ARTISTKLASSE TOE TE VOEGEN AAN FAVORITEKLASSE
-        if artist?.isFavorite == true{
-            liked.append(artist!)
+        for artist in liked{
+            if artist!.isFavorite == true{
+                liked.append(artist!)
+            }
+            return liked
         }
-        return liked
-    }
+    }*/
 }

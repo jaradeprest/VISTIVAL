@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4D7D0286220A0B040028C1D3 /* t'hof van commerce - jaloes.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4D7D027A220A0AFF0028C1D3 /* t'hof van commerce - jaloes.mp3 */; };
+		4D7D0287220A0B040028C1D3 /* Polyphia Goose.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4D7D027B220A0AFF0028C1D3 /* Polyphia Goose.mp3 */; };
+		4D7D0288220A0B040028C1D3 /* Hooverphonic - Mad About You.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4D7D027C220A0B000028C1D3 /* Hooverphonic - Mad About You.mp3 */; };
+		4D7D0289220A0B040028C1D3 /* Preuteleute Pakt je Zak.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4D7D027D220A0B000028C1D3 /* Preuteleute Pakt je Zak.mp3 */; };
+		4D7D028A220A0B040028C1D3 /* TLP Pukkelpop 2014.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4D7D027E220A0B000028C1D3 /* TLP Pukkelpop 2014.mp3 */; };
+		4D7D028B220A0B040028C1D3 /* Arsenal - Estupendo.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4D7D027F220A0B010028C1D3 /* Arsenal - Estupendo.mp3 */; };
+		4D7D028C220A0B040028C1D3 /* 2 Fabiola - Lift U Up.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4D7D0280220A0B010028C1D3 /* 2 Fabiola - Lift U Up.mp3 */; };
+		4D7D028D220A0B040028C1D3 /* Kenji Minogue - Naam familienaam.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4D7D0281220A0B020028C1D3 /* Kenji Minogue - Naam familienaam.mp3 */; };
+		4D7D028E220A0B040028C1D3 /* Admiral Freebee - Einstein Brain.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4D7D0282220A0B020028C1D3 /* Admiral Freebee - Einstein Brain.mp3 */; };
+		4D7D028F220A0B040028C1D3 /* Magic Magno - Blunt.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4D7D0283220A0B030028C1D3 /* Magic Magno - Blunt.mp3 */; };
+		4D7D0290220A0B040028C1D3 /* Vive la Fete - Noir Desir.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4D7D0284220A0B040028C1D3 /* Vive la Fete - Noir Desir.mp3 */; };
+		4D7D0291220A0B040028C1D3 /* Broken Note - Channel Zero.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4D7D0285220A0B040028C1D3 /* Broken Note - Channel Zero.mp3 */; };
 		51183D1B2204991D0025BD76 /* Icon-Music-20x20@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 51183D1A2204991D0025BD76 /* Icon-Music-20x20@2x.png */; };
 		51183D1D220499CE0025BD76 /* Icon-Home-20x20@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 51183D1C220499CE0025BD76 /* Icon-Home-20x20@2x.png */; };
 		51183D1F22049A2D0025BD76 /* Icon-Stand-20x20@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 51183D1E22049A2C0025BD76 /* Icon-Stand-20x20@2x.png */; };
@@ -83,6 +95,18 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4D7D027A220A0AFF0028C1D3 /* t'hof van commerce - jaloes.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "t'hof van commerce - jaloes.mp3"; sourceTree = "<group>"; };
+		4D7D027B220A0AFF0028C1D3 /* Polyphia Goose.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Polyphia Goose.mp3"; sourceTree = "<group>"; };
+		4D7D027C220A0B000028C1D3 /* Hooverphonic - Mad About You.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Hooverphonic - Mad About You.mp3"; sourceTree = "<group>"; };
+		4D7D027D220A0B000028C1D3 /* Preuteleute Pakt je Zak.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Preuteleute Pakt je Zak.mp3"; sourceTree = "<group>"; };
+		4D7D027E220A0B000028C1D3 /* TLP Pukkelpop 2014.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "TLP Pukkelpop 2014.mp3"; sourceTree = "<group>"; };
+		4D7D027F220A0B010028C1D3 /* Arsenal - Estupendo.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Arsenal - Estupendo.mp3"; sourceTree = "<group>"; };
+		4D7D0280220A0B010028C1D3 /* 2 Fabiola - Lift U Up.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "2 Fabiola - Lift U Up.mp3"; sourceTree = "<group>"; };
+		4D7D0281220A0B020028C1D3 /* Kenji Minogue - Naam familienaam.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Kenji Minogue - Naam familienaam.mp3"; sourceTree = "<group>"; };
+		4D7D0282220A0B020028C1D3 /* Admiral Freebee - Einstein Brain.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Admiral Freebee - Einstein Brain.mp3"; sourceTree = "<group>"; };
+		4D7D0283220A0B030028C1D3 /* Magic Magno - Blunt.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Magic Magno - Blunt.mp3"; sourceTree = "<group>"; };
+		4D7D0284220A0B040028C1D3 /* Vive la Fete - Noir Desir.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Vive la Fete - Noir Desir.mp3"; sourceTree = "<group>"; };
+		4D7D0285220A0B040028C1D3 /* Broken Note - Channel Zero.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Broken Note - Channel Zero.mp3"; sourceTree = "<group>"; };
 		51183D1A2204991D0025BD76 /* Icon-Music-20x20@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Music-20x20@2x.png"; sourceTree = "<group>"; };
 		51183D1C220499CE0025BD76 /* Icon-Home-20x20@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Home-20x20@2x.png"; sourceTree = "<group>"; };
 		51183D1E22049A2C0025BD76 /* Icon-Stand-20x20@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Stand-20x20@2x.png"; sourceTree = "<group>"; };
@@ -171,6 +195,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4D7D0279220A0AAF0028C1D3 /* Music */ = {
+			isa = PBXGroup;
+			children = (
+				4D7D0280220A0B010028C1D3 /* 2 Fabiola - Lift U Up.mp3 */,
+				4D7D0282220A0B020028C1D3 /* Admiral Freebee - Einstein Brain.mp3 */,
+				4D7D027F220A0B010028C1D3 /* Arsenal - Estupendo.mp3 */,
+				4D7D0285220A0B040028C1D3 /* Broken Note - Channel Zero.mp3 */,
+				4D7D027C220A0B000028C1D3 /* Hooverphonic - Mad About You.mp3 */,
+				4D7D0281220A0B020028C1D3 /* Kenji Minogue - Naam familienaam.mp3 */,
+				4D7D0283220A0B030028C1D3 /* Magic Magno - Blunt.mp3 */,
+				4D7D027B220A0AFF0028C1D3 /* Polyphia Goose.mp3 */,
+				4D7D027D220A0B000028C1D3 /* Preuteleute Pakt je Zak.mp3 */,
+				4D7D027A220A0AFF0028C1D3 /* t'hof van commerce - jaloes.mp3 */,
+				4D7D027E220A0B000028C1D3 /* TLP Pukkelpop 2014.mp3 */,
+				4D7D0284220A0B040028C1D3 /* Vive la Fete - Noir Desir.mp3 */,
+			);
+			path = Music;
+			sourceTree = "<group>";
+		};
 		5154E64E2202F5220079251B = {
 			isa = PBXGroup;
 			children = (
@@ -190,6 +233,7 @@
 		5154E6592202F5220079251B /* test */ = {
 			isa = PBXGroup;
 			children = (
+				4D7D0279220A0AAF0028C1D3 /* Music */,
 				5154E66E22033A9F0079251B /* Images */,
 				5154E66D22033A960079251B /* Model */,
 				5154E66C22033A870079251B /* Controllers */,
@@ -352,9 +396,11 @@
 			files = (
 				5154E6AC220341910079251B /* vis-04.png in Resources */,
 				5154E6652202F5300079251B /* LaunchScreen.storyboard in Resources */,
+				4D7D028E220A0B040028C1D3 /* Admiral Freebee - Einstein Brain.mp3 in Resources */,
 				5154E6C722034ABB0079251B /* preute.jpg in Resources */,
 				51183D2122049A910025BD76 /* Icon-Like-20x20@2x.png in Resources */,
 				5154E68B22033C230079251B /* sfeer7.jpg in Resources */,
+				4D7D028C220A0B040028C1D3 /* 2 Fabiola - Lift U Up.mp3 in Resources */,
 				5154E6A522033C230079251B /* workout2.jpg in Resources */,
 				5154E69F22033C230079251B /* sfeer4.jpg in Resources */,
 				5154E6D522034C820079251B /* goose.jpg in Resources */,
@@ -364,6 +410,7 @@
 				5154E6A322033C230079251B /* sfeer3.jpg in Resources */,
 				51A5D90A22043A5B009CA881 /* cocktail.jpg in Resources */,
 				5154E69522033C230079251B /* sfeer5.jpg in Resources */,
+				4D7D028A220A0B040028C1D3 /* TLP Pukkelpop 2014.mp3 in Resources */,
 				5154E6A422033C230079251B /* vuurwerk.jpg in Resources */,
 				5154E6C322034A180079251B /* admiral.jpg in Resources */,
 				5154E6CB22034B4E0079251B /* blunt.jpg in Resources */,
@@ -377,24 +424,33 @@
 				51183D2322049ACE0025BD76 /* Icon-Map-20x20@2x.png in Resources */,
 				5154E69622033C230079251B /* sfeer1.jpg in Resources */,
 				51183D1B2204991D0025BD76 /* Icon-Music-20x20@2x.png in Resources */,
+				4D7D0287220A0B040028C1D3 /* Polyphia Goose.mp3 in Resources */,
 				5154E69A22033C230079251B /* yoga1.jpg in Resources */,
 				5154E6A622033C230079251B /* hoelahoep.jpg in Resources */,
 				5154E6C1220349E10079251B /* 2fabiola.jpg in Resources */,
 				5154E69022033C230079251B /* market.jpg in Resources */,
+				4D7D0288220A0B040028C1D3 /* Hooverphonic - Mad About You.mp3 in Resources */,
 				5154E69B22033C230079251B /* mask.jpg in Resources */,
 				51A5D90822043A28009CA881 /* bar.jpg in Resources */,
 				5154E6A122033C230079251B /* yoga2.jpg in Resources */,
+				4D7D0289220A0B040028C1D3 /* Preuteleute Pakt je Zak.mp3 in Resources */,
 				5154E6D322034C4C0079251B /* fete.jpg in Resources */,
+				4D7D0291220A0B040028C1D3 /* Broken Note - Channel Zero.mp3 in Resources */,
+				4D7D028B220A0B040028C1D3 /* Arsenal - Estupendo.mp3 in Resources */,
 				51A5D906220439E3009CA881 /* friet.jpg in Resources */,
 				5154E69922033C230079251B /* surf2.jpg in Resources */,
 				5154E69322033C230079251B /* surf3.jpg in Resources */,
+				4D7D0290220A0B040028C1D3 /* Vive la Fete - Noir Desir.mp3 in Resources */,
 				5154E68C22033C230079251B /* yoga3.jpg in Resources */,
 				5154E6CF22034BC00079251B /* hoover.jpg in Resources */,
+				4D7D0286220A0B040028C1D3 /* t'hof van commerce - jaloes.mp3 in Resources */,
 				5154E6CD22034B8A0079251B /* zero.jpg in Resources */,
 				5154E69722033C230079251B /* surf4.jpg in Resources */,
 				5154E68D22033C230079251B /* sfeer2.jpg in Resources */,
+				4D7D028F220A0B040028C1D3 /* Magic Magno - Blunt.mp3 in Resources */,
 				5154E69E22033C230079251B /* surf1.jpg in Resources */,
 				5154E6A222033C230079251B /* waterpijp.jpg in Resources */,
+				4D7D028D220A0B040028C1D3 /* Kenji Minogue - Naam familienaam.mp3 in Resources */,
 				5154E69122033C230079251B /* sfeer6.jpg in Resources */,
 				5154E69D22033C230079251B /* sfeer9.jpg in Resources */,
 				5154E6D122034BFD0079251B /* arsenal.jpg in Resources */,

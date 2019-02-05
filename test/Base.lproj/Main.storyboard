@@ -336,6 +336,9 @@
                                     <constraint firstAttribute="width" constant="30" id="LDh-bv-IgT"/>
                                 </constraints>
                                 <state key="normal" title="▶️"/>
+                                <connections>
+                                    <action selector="btnPlay:" destination="Miz-2h-D70" eventType="touchUpInside" id="PFM-PD-JqH"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="83i-gv-CVn">
                                 <rect key="frame" x="172.5" y="274" width="30" height="30"/>
@@ -344,6 +347,9 @@
                                     <constraint firstAttribute="height" constant="30" id="FT5-gH-92b"/>
                                 </constraints>
                                 <state key="normal" title="⏸"/>
+                                <connections>
+                                    <action selector="btnPause:" destination="Miz-2h-D70" eventType="touchUpInside" id="f2f-UJ-0W9"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hsR-eJ-S16">
                                 <rect key="frame" x="222.5" y="274" width="30" height="30"/>
@@ -352,12 +358,18 @@
                                     <constraint firstAttribute="height" constant="30" id="jzx-P3-7Dy"/>
                                 </constraints>
                                 <state key="normal" title="⏹"/>
+                                <connections>
+                                    <action selector="btnStop:" destination="Miz-2h-D70" eventType="touchUpInside" id="wI5-2s-3hp"/>
+                                </connections>
                             </button>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="TwR-ib-F8f">
                                 <rect key="frame" x="14" y="314" width="347" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="29" id="x9p-Ds-iPn"/>
                                 </constraints>
+                                <connections>
+                                    <action selector="sliderSong:" destination="Miz-2h-D70" eventType="valueChanged" id="VGg-sh-ulf"/>
+                                </connections>
                             </slider>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -396,6 +408,7 @@
                         <outlet property="btnFavorite" destination="IPW-KM-6qt" id="FBr-SY-nNc"/>
                         <outlet property="imageBand" destination="5uh-2l-EOD" id="Qcv-WX-H6l"/>
                         <outlet property="lblArtistName" destination="zPv-NH-Sbw" id="26a-qa-wv8"/>
+                        <outlet property="lblSongTitle" destination="Ojc-Pn-IbF" id="G3h-vM-A79"/>
                         <outlet property="tvBand" destination="oLV-Ug-8sp" id="ga1-zH-Cr8"/>
                     </connections>
                 </viewController>
