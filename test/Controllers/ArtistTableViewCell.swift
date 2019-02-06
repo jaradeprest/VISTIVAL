@@ -38,14 +38,14 @@ class ArtistTableViewCell: UITableViewCell {
                     info.isFavorite = !info.isFavorite!
                     if info.isFavorite! {
                         btnFav.tintColor = UIColor.red
-                        liked += [info]
-                        print(liked)
                     }else{
                         btnFav.tintColor = UIColor.darkGray
                     }
                 }
+                if info.isFavorite!{
+                    liked += [info]
+                }
             }
         }
     }
-
 }
