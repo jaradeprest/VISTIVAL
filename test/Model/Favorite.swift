@@ -10,20 +10,20 @@ import Foundation
 
 class Favorite{
     
-    var liked:[Artist]
+    var liked:[Artist] = []
     var artist:Artist?
     
     init() {
         self.liked=[Artist].init()
     }
     
-    /*func addToLiked() -> [Artist] {
+    
+    func addToLiked() -> [Artist] {
         //FUNCTIE OM FAVORIETEN UIT ARTISTKLASSE TOE TE VOEGEN AAN FAVORITEKLASSE
         for artist in liked{
-            if artist!.isFavorite == true{
-                liked.append(artist!)
+            if artist.isFavorite == true{
+                liked.append(artist)
             }
-            return liked
-        }
-    }*/
+        };return liked
+    }
 }

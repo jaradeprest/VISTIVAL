@@ -14,6 +14,7 @@ class ArtistTableViewCell: UITableViewCell {
     @IBOutlet weak var lblName: UILabel!
     @IBOutlet weak var lblTime: UILabel!
     var artist:Artist?
+    var liked:[Artist] = []
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -29,6 +30,7 @@ class ArtistTableViewCell: UITableViewCell {
         
     }
     
+    
     @IBAction func favouritePressed(_ sender: Any) {
         for dag in DAO.instance.playtimeLijst!{
             for info in dag.artistLijst {
@@ -36,6 +38,8 @@ class ArtistTableViewCell: UITableViewCell {
                     info.isFavorite = !info.isFavorite!
                     if info.isFavorite! {
                         btnFav.tintColor = UIColor.red
+                        liked += [info]
+                        print(liked)
                     }else{
                         btnFav.tintColor = UIColor.darkGray
                     }
@@ -43,6 +47,5 @@ class ArtistTableViewCell: UITableViewCell {
             }
         }
     }
-    
 
 }

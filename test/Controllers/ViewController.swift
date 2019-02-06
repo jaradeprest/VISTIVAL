@@ -15,6 +15,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     let dao = DAO.instance
     @IBOutlet weak var tblArtist: UITableView!
     
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -39,6 +41,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         artistCell.artist = artist
         return artistCell
     }
+    
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let bestemming:DetailArtistViewController=segue.destination as! DetailArtistViewController

@@ -39,7 +39,7 @@ class DAO{
         //dagen toevoegen aan lijst van playtime
         self.playtimeLijst = [vrijdag, zaterdag]
         
-
+        
         
         
         //STANDEN

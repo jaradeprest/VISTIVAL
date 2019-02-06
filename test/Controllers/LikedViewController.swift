@@ -12,13 +12,11 @@ class LikedViewController: UIViewController, UITableViewDataSource, UITableViewD
  
     let favorites = Favorite.init()
     @IBOutlet weak var tblFavorites: UITableView!
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
-    
     
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
