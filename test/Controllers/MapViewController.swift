@@ -86,13 +86,17 @@ class MapViewController: UIViewController,  MKMapViewDelegate, CLLocationManager
         customView.pinTintColor = UIColor.init(red: 120/180, green: 20/180, blue: 180/180, alpha: 1)
         customView.canShowCallout = true
         
-        //Afbeelding in annotation callout
+        //afbeelding in callout + font aangepast van subtitle
         let scale = CGRect.init(x: 0, y: 0, width: 50, height: 50)
         let viewAfb = UIImageView.init(frame: scale)
+        let scale2 = CGRect.init(x: 10, y: 10, width: 200, height: 50)
+        let subtitle = UITextField.init(frame: scale2)
         viewAfb.image = myPin!.afb
+        subtitle.text = myPin!.subtitle
+        subtitle.font = UIFont.italicSystemFont(ofSize: 10)
+        subtitle.adjustsFontForContentSizeCategory = true
         customView.leftCalloutAccessoryView = viewAfb
-        //!!!!!!!LETTERTYPE VERANDEREN!!!!!!!
-        customView.sizeToFit()
+        customView.detailCalloutAccessoryView = subtitle
         
         return customView
     }

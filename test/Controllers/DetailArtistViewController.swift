@@ -86,4 +86,8 @@ class DetailArtistViewController: UIViewController {
         audioPlayer.volume = sender.value
         //1 == max volume 0 == mute
     }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        audioPlayer.stop()
+    }
 }
