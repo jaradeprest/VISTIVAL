@@ -15,21 +15,22 @@ class DAO{
     var allSongs:[String]?
     var playtimeLijst:[Playtime]?
     var standSoortLijst:[Standsoort]?
+    var favoLijst:[Artist] = []
     
     private init() {
         //ARTIESTEN
-        let fabiola = Artist.init(id:12, bandNaam: "2Fabiola", bandLeden: "Pat Krimson, Olivier Adams & Zohra Aït-Fath", speelTijd: "01:00-02:30", afbeeldingsNaam: "2fabiola.jpg", song: "2 Fabiola - Lift U Up")
-        let admiral = Artist.init(id:1, bandNaam: "Admiral Freebee", bandLeden: "Tom Van Laere", speelTijd: "19:00-20:00", afbeeldingsNaam: "admiral.jpg", song: "Admiral Freebee - Einstein Brain")
-        let commerce = Artist.init(id:3, bandNaam: "\'t Hof Van Commerce", bandLeden: "Flip Kowlier, DJ 4T4 & Serge Buyse", speelTijd:"22:00-23:00", afbeeldingsNaam: "hof.jpg", song: "t'hof van commerce - jaloes")
-        let preuteleute = Artist.init(id:11, bandNaam: "Preuteleute", bandLeden: "Sebastien Dewaele, Tom Van Rijckeghem, Marc Bruijn, Pieter Van den Berkmortel & Ben Van Camp", speelTijd:"23:30-01:30", afbeeldingsNaam: "preute.jpg", song: "Preuteleute Pakt je Zak")
-        let kenji = Artist.init(id:2, bandNaam: "Kenji Minogue", bandLeden: "Fanny Willen, Conny Komen & Mista Pig", speelTijd:"20:30-21:30", afbeeldingsNaam: "kenji.jpg", song: "Kenji Minogue - Naam familienaam")
-        let blunt = Artist.init(id:6, bandNaam: "Blunt", bandLeden: "Gino Verstraete, Stijn Deldaele, Yannick Swennen, Pieter Nuytens & Jurgen Demeyere", speelTijd:"17:00-17:45", afbeeldingsNaam: "blunt.jpg", song: "Magic Magno - Blunt")
-        let channel = Artist.init(id:10, bandNaam: "Channel Zero", bandLeden: "Franky De Smet-Van Damme, Mikey Doling, Tino De Martino & Phil Baheux", speelTijd:"22:00-23:00", afbeeldingsNaam: "zero.jpg", song: "Broken Note - Channel Zero")
-        let hooverphonic = Artist.init(id:7, bandNaam: "Hooverphonic", bandLeden: "Alex Callier, Raymond Geerts & Luka Cruyberghs", speelTijd:"18:00-18:45", afbeeldingsNaam: "hoover.jpg", song: "Hooverphonic - Mad About You")
-        let arsenal = Artist.init(id:9, bandNaam: "Arsenal", bandLeden: "Hendrik Willemyns, John Roan & Leonie Gysel", speelTijd:"20:30-21:30", afbeeldingsNaam: "arsenal.jpg", song: "Arsenal - Estupendo")
-        let fete = Artist.init(id:8, bandNaam: "Vive la Fête", bandLeden: "Els Pynoo & Danny Mommens", speelTijd:"19:00-20:00", afbeeldingsNaam: "fete.jpg", song: "Vive la Fete - Noir Desir")
-        let goose = Artist.init(id:4, bandNaam: "Goose", bandLeden: "Michael Karhousse, Dave Martijn, Tom Coghe & Bert Libeert", speelTijd:"23:30-00:30", afbeeldingsNaam: "goose.jpg", song: "Polyphia Goose")
-        let tlp = Artist.init(id:5, bandNaam: "TLP", bandLeden: "Paul Lannoy",speelTijd:"01:00-02:30", afbeeldingsNaam: "tlp.jpg", song: "TLP Pukkelpop 2014")
+        let fabiola = Artist.init(id:12, bandNaam: "2Fabiola", bandLeden: "Pat Krimson, Olivier Adams & Zohra Aït-Fath", speelTijd: "01:00-02:30", speelDag: "Zaterdag", afbeeldingsNaam: "2fabiola.jpg", song: "2 Fabiola - Lift U Up")
+        let admiral = Artist.init(id:1, bandNaam: "Admiral Freebee", bandLeden: "Tom Van Laere", speelTijd: "19:00-20:00", speelDag: "Vrijdag", afbeeldingsNaam: "admiral.jpg", song: "Admiral Freebee - Einstein Brain")
+        let commerce = Artist.init(id:3, bandNaam: "\'t Hof Van Commerce", bandLeden: "Flip Kowlier, DJ 4T4 & Serge Buyse", speelTijd:"22:00-23:00", speelDag: "Vrijdag", afbeeldingsNaam: "hof.jpg", song: "t'hof van commerce - jaloes")
+        let preuteleute = Artist.init(id:11, bandNaam: "Preuteleute", bandLeden: "Sebastien Dewaele, Tom Van Rijckeghem, Marc Bruijn, Pieter Van den Berkmortel & Ben Van Camp", speelTijd:"23:30-01:30", speelDag: "Zaterdag", afbeeldingsNaam: "preute.jpg", song: "Preuteleute Pakt je Zak")
+        let kenji = Artist.init(id:2, bandNaam: "Kenji Minogue", bandLeden: "Fanny Willen, Conny Komen & Mista Pig", speelTijd:"20:30-21:30", speelDag: "Vrijdag", afbeeldingsNaam: "kenji.jpg", song: "Kenji Minogue - Naam familienaam")
+        let blunt = Artist.init(id:6, bandNaam: "Blunt", bandLeden: "Gino Verstraete, Stijn Deldaele, Yannick Swennen, Pieter Nuytens & Jurgen Demeyere", speelTijd:"17:00-17:45", speelDag: "Zaterdag", afbeeldingsNaam: "blunt.jpg", song: "Magic Magno - Blunt")
+        let channel = Artist.init(id:10, bandNaam: "Channel Zero", bandLeden: "Franky De Smet-Van Damme, Mikey Doling, Tino De Martino & Phil Baheux", speelTijd:"22:00-23:00", speelDag: "Zaterdag", afbeeldingsNaam: "zero.jpg", song: "Broken Note - Channel Zero")
+        let hooverphonic = Artist.init(id:7, bandNaam: "Hooverphonic", bandLeden: "Alex Callier, Raymond Geerts & Luka Cruyberghs", speelTijd:"18:00-18:45", speelDag: "Zaterdag", afbeeldingsNaam: "hoover.jpg", song: "Hooverphonic - Mad About You")
+        let arsenal = Artist.init(id:9, bandNaam: "Arsenal", bandLeden: "Hendrik Willemyns, John Roan & Leonie Gysel", speelTijd:"20:30-21:30", speelDag: "Zaterdag", afbeeldingsNaam: "arsenal.jpg", song: "Arsenal - Estupendo")
+        let fete = Artist.init(id:8, bandNaam: "Vive la Fête", bandLeden: "Els Pynoo & Danny Mommens", speelTijd:"19:00-20:00", speelDag: "Zaterdag", afbeeldingsNaam: "fete.jpg", song: "Vive la Fete - Noir Desir")
+        let goose = Artist.init(id:4, bandNaam: "Goose", bandLeden: "Michael Karhousse, Dave Martijn, Tom Coghe & Bert Libeert", speelTijd:"23:30-00:30", speelDag: "Vrijdag", afbeeldingsNaam: "goose.jpg", song: "Polyphia Goose")
+        let tlp = Artist.init(id:5, bandNaam: "TLP", bandLeden: "Paul Lannoy",speelTijd:"01:00-02:30", speelDag: "Vrijdag", afbeeldingsNaam: "tlp.jpg", song: "TLP Pukkelpop 2014")
         
         //artiesten toevoegen aan juiste dag
         let vrijdag = Playtime.init(speelTijd: "Vrijdag")

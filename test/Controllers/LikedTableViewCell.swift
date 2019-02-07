@@ -12,7 +12,7 @@ class LikedTableViewCell: UITableViewCell {
 
     @IBOutlet weak var lblSpeelTijd: UILabel!
     @IBOutlet weak var lblName: UILabel!
-    @IBOutlet weak var btnFav: UIButton!
+    @IBOutlet weak var lblSpeelDag: UILabel!
     var artist:Artist?
     
     override func awakeFromNib() {
@@ -23,16 +23,5 @@ class LikedTableViewCell: UITableViewCell {
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
-        if artist?.isFavorite==true{
-            btnFav.tintColor = UIColor.red
-        }else{btnFav.tintColor = UIColor.darkGray}
-    }
-    
-    @IBAction func favouritePressed(_ sender: Any) {
-        if artist!.isFavorite! {
-            btnFav.tintColor = UIColor.red
-            }else{
-                btnFav.tintColor = UIColor.darkGray
-                    }
     }
 }

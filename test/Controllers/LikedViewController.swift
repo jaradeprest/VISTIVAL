@@ -10,7 +10,7 @@ import UIKit
 
 class LikedViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
  
-    let favorites = Favorite.init()
+    let dao = DAO.instance
     @IBOutlet weak var tblFavorites: UITableView!
 
     
@@ -23,21 +23,22 @@ class LikedViewController: UIViewController, UITableViewDataSource, UITableViewD
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return favorites.liked.count
+        return DAO.instance.favoLijst.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell : LikedTableViewCell = tableView.dequeueReusableCell(withIdentifier: "artistCell") as! LikedTableViewCell
-        let favorite = favorites.liked[indexPath.row]
+        let favorite = dao.favoLijst[indexPath.row]
         cell.lblName.text = favorite.bandNaam
         cell.lblSpeelTijd.text = favorite.speelTijd
+        cell.lblSpeelDag.text = favorite.speelDag
         return cell
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let bestemming:DetailArtistViewController=segue.destination as! DetailArtistViewController
+        let bestemming: DetailFavoViewController = segue.destination as! DetailFavoViewController
         let clickedPlace = tblFavorites.indexPathForSelectedRow
-        let artist = favorites.liked[clickedPlace!.row]
+        let artist = dao.favoLijst[clickedPlace!.row]
         bestemming.clickedArtist = artist
     }
     
